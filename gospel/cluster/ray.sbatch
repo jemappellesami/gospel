@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=1G
+#SBATCH --mem=4G
 #SBATCH --time=01:00:00
 #SBATCH --partition=cpu_devel
 #SBATCH --array=0-31
