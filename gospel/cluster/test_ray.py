@@ -1,15 +1,19 @@
-import pyslurm
+import ray
 
-# Define job parameters
-job_spec = {
-    "name": "test_job",
-    "nodes": 1,
-    "ntasks": 1,
-    "time": "00:01:00",
-    "partition": "cpu_devel",
-    "script": "echo foo",
-}
+# Connect to the existing Ray cluster
+ray.init(address="auto")
 
-# Submit job
-job_id = pyslurm.job().submit_batch_job(job_spec)
-print(f"Submitted job ID: {job_id}")
+
+@ray.remote
+def compute_task(x):
+    import time
+
+    time.sleep(1)  # Simulate work
+    return x * x
+
+
+# Distribute computation across workers
+futures = [compute_task.remote(i) for i in range(10)]
+results = ray.get(futures)
+
+print("Ray computation results:", results)
