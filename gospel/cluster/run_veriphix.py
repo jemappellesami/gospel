@@ -178,7 +178,11 @@ def run(
     n_tolerated_failures = parameters.threshold * parameters.t
 
     outcome = ray.get(
-        for_each_round.remote(rounds, i) for rounds in all_rounds for i in rounds.rounds
+        [
+            for_each_round.remote(rounds, i)
+            for rounds in all_rounds
+            for i in rounds.rounds
+        ]
     )
 
     outcome_circuits = dict(itertools.groupby(outcome, lambda pair: pair[0]))

@@ -13,6 +13,6 @@ def compute_task(x):
 
 
 # Distribute computation across workers
-results = ray.get(compute_task.remote(i) for i in range(10))
+results = ray.get([compute_task.remote(i) for i in range(10)])
 
 print("Ray computation results:", results)
