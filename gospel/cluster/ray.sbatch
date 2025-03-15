@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 #SBATCH --job-name=ray-worker
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
