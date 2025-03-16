@@ -1,0 +1,1010 @@
+{
+    "0": {
+        "circuit605.qasm": [
+            false,
+            0,
+            0.38
+        ],
+        "circuit584.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit800.qasm": [
+            false,
+            0,
+            0.28
+        ],
+        "circuit436.qasm": [
+            false,
+            1,
+            0.26
+        ],
+        "circuit880.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit582.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit302.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit445.qasm": [
+            true,
+            0,
+            0.18
+        ],
+        "circuit753.qasm": [
+            true,
+            0,
+            0.18
+        ],
+        "circuit167.qasm": [
+            false,
+            1,
+            0.28
+        ],
+        "circuit232.qasm": [
+            false,
+            1,
+            0.36
+        ],
+        "circuit033.qasm": [
+            false,
+            1,
+            0.3
+        ],
+        "circuit215.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit805.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit359.qasm": [
+            false,
+            1,
+            0.44
+        ],
+        "circuit825.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit439.qasm": [
+            false,
+            0,
+            0.34
+        ],
+        "circuit121.qasm": [
+            false,
+            1,
+            0.26
+        ],
+        "circuit817.qasm": [
+            false,
+            0,
+            0.24
+        ],
+        "circuit960.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit737.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit766.qasm": [
+            false,
+            1,
+            0.32
+        ],
+        "circuit567.qasm": [
+            false,
+            1,
+            0.4
+        ],
+        "circuit099.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit062.qasm": [
+            false,
+            1,
+            0.4
+        ],
+        "circuit014.qasm": [
+            false,
+            0,
+            0.36
+        ],
+        "circuit102.qasm": [
+            false,
+            0,
+            0.2
+        ],
+        "circuit428.qasm": [
+            false,
+            0,
+            0.24
+        ],
+        "circuit871.qasm": [
+            false,
+            1,
+            0.26
+        ],
+        "circuit361.qasm": [
+            false,
+            1,
+            0.38
+        ],
+        "circuit591.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit794.qasm": [
+            false,
+            1,
+            0.2
+        ],
+        "circuit065.qasm": [
+            false,
+            1,
+            0.34
+        ],
+        "circuit160.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit211.qasm": [
+            false,
+            0,
+            0.24
+        ],
+        "circuit702.qasm": [
+            false,
+            1,
+            0.34
+        ],
+        "circuit796.qasm": [
+            false,
+            0,
+            0.4
+        ],
+        "circuit048.qasm": [
+            false,
+            0,
+            0.34
+        ],
+        "circuit719.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit768.qasm": [
+            false,
+            1,
+            0.32
+        ],
+        "circuit752.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit299.qasm": [
+            false,
+            0,
+            0.34
+        ],
+        "circuit111.qasm": [
+            false,
+            1,
+            0.3
+        ],
+        "circuit699.qasm": [
+            false,
+            0,
+            0.28
+        ],
+        "circuit594.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit612.qasm": [
+            false,
+            1,
+            0.36
+        ],
+        "circuit049.qasm": [
+            false,
+            1,
+            0.4
+        ],
+        "circuit539.qasm": [
+            false,
+            "Ambig.",
+            0.38
+        ],
+        "circuit274.qasm": [
+            false,
+            1,
+            0.28
+        ],
+        "circuit387.qasm": [
+            false,
+            0,
+            0.26
+        ]
+    },
+    "1": {
+        "circuit605.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit584.qasm": [
+            false,
+            0,
+            0.22
+        ],
+        "circuit800.qasm": [
+            false,
+            0,
+            0.38
+        ],
+        "circuit436.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit880.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit582.qasm": [
+            false,
+            1,
+            0.28
+        ],
+        "circuit302.qasm": [
+            false,
+            1,
+            0.38
+        ],
+        "circuit445.qasm": [
+            false,
+            0,
+            0.28
+        ],
+        "circuit753.qasm": [
+            false,
+            0,
+            0.24
+        ],
+        "circuit167.qasm": [
+            false,
+            1,
+            0.28
+        ],
+        "circuit232.qasm": [
+            false,
+            1,
+            0.3
+        ],
+        "circuit033.qasm": [
+            false,
+            1,
+            0.16
+        ],
+        "circuit215.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit805.qasm": [
+            false,
+            0,
+            0.28
+        ],
+        "circuit359.qasm": [
+            false,
+            0,
+            0.38
+        ],
+        "circuit825.qasm": [
+            false,
+            0,
+            0.34
+        ],
+        "circuit439.qasm": [
+            false,
+            1,
+            0.18
+        ],
+        "circuit121.qasm": [
+            false,
+            1,
+            0.3
+        ],
+        "circuit817.qasm": [
+            false,
+            0,
+            0.18
+        ],
+        "circuit960.qasm": [
+            false,
+            0,
+            0.34
+        ],
+        "circuit737.qasm": [
+            false,
+            0,
+            0.24
+        ],
+        "circuit766.qasm": [
+            false,
+            1,
+            0.24
+        ],
+        "circuit567.qasm": [
+            false,
+            1,
+            0.28
+        ],
+        "circuit099.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit062.qasm": [
+            false,
+            0,
+            0.26
+        ],
+        "circuit014.qasm": [
+            false,
+            0,
+            0.38
+        ],
+        "circuit102.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit428.qasm": [
+            false,
+            0,
+            0.28
+        ],
+        "circuit871.qasm": [
+            false,
+            1,
+            0.34
+        ],
+        "circuit361.qasm": [
+            false,
+            1,
+            0.18
+        ],
+        "circuit591.qasm": [
+            false,
+            0,
+            0.3
+        ],
+        "circuit794.qasm": [
+            false,
+            1,
+            0.24
+        ],
+        "circuit065.qasm": [
+            false,
+            1,
+            0.3
+        ],
+        "circuit160.qasm": [
+            false,
+            0,
+            0.36
+        ],
+        "circuit211.qasm": [
+            false,
+            0,
+            0.38
+        ],
+        "circuit702.qasm": [
+            false,
+            "Ambig.",
+            0.28
+        ],
+        "circuit796.qasm": [
+            false,
+            0,
+            0.22
+        ],
+        "circuit048.qasm": [
+            false,
+            0,
+            0.32
+        ],
+        "circuit719.qasm": [
+            false,
+            0,
+            0.38
+        ],
+        "circuit768.qasm": [
+            false,
+            0,
+            0.2
+        ],
+        "circuit752.qasm": [
+            false,
+            1,
+            0.36
+        ],
+        "circuit299.qasm": [
+            false,
+            0,
+            0.28
+        ],
+        "circuit111.qasm": [
+            false,
+            1,
+            0.28
+        ],
+        "circuit699.qasm": [
+            false,
+            0,
+            0.4
+        ],
+        "circuit594.qasm": [
+            false,
+            1,
+            0.4
+        ],
+        "circuit612.qasm": [
+            false,
+            1,
+            0.22
+        ],
+        "circuit049.qasm": [
+            false,
+            1,
+            0.42
+        ],
+        "circuit539.qasm": [
+            false,
+            1,
+            0.32
+        ],
+        "circuit274.qasm": [
+            false,
+            1,
+            0.24
+        ],
+        "circuit387.qasm": [
+            false,
+            1,
+            0.24
+        ]
+    },
+    "2": {
+        "circuit605.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit584.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit800.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit436.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit880.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit582.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit302.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit445.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit753.qasm": [
+            true,
+            0,
+            0.1
+        ],
+        "circuit167.qasm": [
+            true,
+            1,
+            0.02
+        ],
+        "circuit232.qasm": [
+            true,
+            1,
+            0.02
+        ],
+        "circuit033.qasm": [
+            true,
+            "Ambig.",
+            0.06
+        ],
+        "circuit215.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit805.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit359.qasm": [
+            true,
+            0,
+            0.02
+        ],
+        "circuit825.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit439.qasm": [
+            true,
+            0,
+            0.02
+        ],
+        "circuit121.qasm": [
+            true,
+            1,
+            0.1
+        ],
+        "circuit817.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit960.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit737.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit766.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit567.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit099.qasm": [
+            true,
+            0,
+            0.0
+        ],
+        "circuit062.qasm": [
+            true,
+            "Ambig.",
+            0.08
+        ],
+        "circuit014.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit102.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit428.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit871.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit361.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit591.qasm": [
+            true,
+            0,
+            0.14
+        ],
+        "circuit794.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit065.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit160.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit211.qasm": [
+            true,
+            0,
+            0.1
+        ],
+        "circuit702.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit796.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit048.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit719.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit768.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit752.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit299.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit111.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit699.qasm": [
+            true,
+            0,
+            0.04
+        ],
+        "circuit594.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit612.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit049.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit539.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit274.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit387.qasm": [
+            true,
+            1,
+            0.04
+        ]
+    },
+    "3": {
+        "circuit605.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit584.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit800.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit436.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit880.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit582.qasm": [
+            true,
+            "Ambig.",
+            0.06
+        ],
+        "circuit302.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit445.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit753.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit167.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit232.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit033.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit215.qasm": [
+            true,
+            0,
+            0.0
+        ],
+        "circuit805.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit359.qasm": [
+            false,
+            0,
+            0.14
+        ],
+        "circuit825.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit439.qasm": [
+            true,
+            0,
+            0.02
+        ],
+        "circuit121.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit817.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit960.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit737.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit766.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit567.qasm": [
+            true,
+            1,
+            0.0
+        ],
+        "circuit099.qasm": [
+            true,
+            0,
+            0.0
+        ],
+        "circuit062.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit014.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit102.qasm": [
+            true,
+            0,
+            0.02
+        ],
+        "circuit428.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit871.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit361.qasm": [
+            true,
+            1,
+            0.04
+        ],
+        "circuit591.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit794.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit065.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit160.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit211.qasm": [
+            true,
+            0,
+            0.02
+        ],
+        "circuit702.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit796.qasm": [
+            true,
+            0,
+            0.02
+        ],
+        "circuit048.qasm": [
+            true,
+            0,
+            0.0
+        ],
+        "circuit719.qasm": [
+            true,
+            0,
+            0.06
+        ],
+        "circuit768.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit752.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit299.qasm": [
+            false,
+            0,
+            0.14
+        ],
+        "circuit111.qasm": [
+            true,
+            1,
+            0.08
+        ],
+        "circuit699.qasm": [
+            true,
+            0,
+            0.08
+        ],
+        "circuit594.qasm": [
+            true,
+            1,
+            0.02
+        ],
+        "circuit612.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit049.qasm": [
+            true,
+            1,
+            0.02
+        ],
+        "circuit539.qasm": [
+            true,
+            1,
+            0.06
+        ],
+        "circuit274.qasm": [
+            true,
+            1,
+            0.02
+        ],
+        "circuit387.qasm": [
+            true,
+            "Ambig.",
+            0.06
+        ]
+    }
+}
