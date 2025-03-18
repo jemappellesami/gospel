@@ -273,19 +273,23 @@ def run(
                 n_failed_trap_rounds += result.value
             else:
                 assert_never(result.kind)
-        failure_rate = n_failed_trap_rounds / parameters.t
+
+        outcomes_dict[circuit_name]={"outcome_sum":outcome_sum, 
+                                     "n_failed_trap_rounds": n_failed_trap_rounds}
         
-        if outcome_sum == parameters.d / 2:
-            outcome: str | int = "Ambig."
-        else:
-            outcome = int(outcome_sum > parameters.d / 2)
-        outcomes_dict[circuit_name] = {
-            "outcome_sum": outcome_sum,
-            "n_failed_trap_rounds": n_failed_trap_rounds,
-            # "decision": decision,
-            "outcome": outcome,
-            "failure_rate": failure_rate,
-        }
+        # failure_rate = n_failed_trap_rounds / parameters.t
+        
+        # if outcome_sum == parameters.d / 2:
+        #     outcome: str | int = "Ambig."
+        # else:
+        #     outcome = int(outcome_sum > parameters.d / 2)
+        # outcomes_dict[circuit_name] = {
+        #     "outcome_sum": outcome_sum,
+        #     "n_failed_trap_rounds": n_failed_trap_rounds,
+        #     # "decision": decision,
+        #     "outcome": outcome,
+        #     "failure_rate": failure_rate,
+        # }
 
     with open(f"p{p_err}.json", "w") as file:
         json.dump(outcomes_dict, file, indent=4)

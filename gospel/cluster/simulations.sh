@@ -4,12 +4,12 @@ rm -rf circuits
 python -m gospel.sampling_circuits.experiments
 
 n_comp_run=100
-n_test_run=100
+n_test_run=0
 n_instances=100
 n_nodes=$n_instances
-bqp_error=0.4
+bqp_error=0.5
 
-for p_err in  0.05 0.1 0.15 0.18 0.22; do
+for p_err in  0; do
   PORT=24395
 
   # Print p and assigned port
