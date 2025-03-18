@@ -5,7 +5,7 @@ python -m gospel.sampling_circuits.experiments
 
 n_comp_run=100
 n_test_run=0
-n_instances=100
+n_instances=1000
 n_nodes=$n_instances
 bqp_error=0.5
 
