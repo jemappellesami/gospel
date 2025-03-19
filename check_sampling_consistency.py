@@ -114,9 +114,11 @@ def find_correct_value(circuit_name):
         
 p_err = 0
 outcomes_dict = {}
-d = 1000       # nr of computation rounds
+d = 100       # nr of computation rounds
 num_instances = 5
-instances = random.sample(circuits, num_instances)
+   # Load circuits list from the text file
+with Path("gospel/cluster/sampled_circuits.txt").open() as f:
+    instances = json.load(f)
 
 # Noiseless simulation, only need to define the backend, no noise model
 backend = StatevectorBackend()
