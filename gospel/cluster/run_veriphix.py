@@ -226,7 +226,7 @@ def run(
         cluster.scale(scale)  # type: ignore[no-untyped-call]
 
    # Load circuits list from the text file
-    with Path("circuits_list.txt").open() as f:
+    with Path("gospel/cluster/circuits_list.txt").open() as f:
         circuits = json.load(f)
 
     print(f"Loaded {len(circuits)} circuits.")
