@@ -223,24 +223,20 @@ def run(
     if scale is not None:
         cluster.scale(scale)  # type: ignore[no-untyped-call]
 
-    # TODO: put the BQP error $p$ in argument of command
-    # TODO: test this
-    with Path("circuits/table.json").open() as f:
-        table = json.load(f)
-        circuits = [name for name, prob in table.items() if prob < bqp_error or prob > 1-bqp_error]
-        # prob = prob of having 1
-        # prob < $bqp_error$ => No instance
-        print(len(circuits))
+   # Load circuits list from the text file
+    with Path("circuits_list.txt").open() as f:
+        circuits = json.load(f)
+
+    print(f"Loaded {len(circuits)} circuits.")
 
     parameters = Parameters(
         d=d, t=t, N=d + t, num_instances=num_instances, p_err=p_err
     )
 
     # Recording info
-    circuit_names = random.sample(circuits, parameters.num_instances)
 
     all_rounds = [
-        get_rounds(parameters, circuit_name) for circuit_name in circuit_names
+        get_rounds(parameters, circuit_name) for circuit_name in circuits
     ]
 
     n_failed_trap_rounds = 0
