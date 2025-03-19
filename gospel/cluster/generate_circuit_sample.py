@@ -20,10 +20,13 @@ def main():
     
     print(len(circuits))
     
+    import random
+    random_circuits = random.sample(circuits, n_instances)
+
     output_path = Path("gospel/cluster/sampled_circuits.txt")
     output_path.parent.mkdir(parents=True, exist_ok=True)  # Ensure directory exists
     with output_path.open("w") as f:
-        json.dump(circuits, f)  # Save as JSON format
+        json.dump(random_circuits, f)  # Save as JSON format
 
     print(f"Saved {len(circuits)} circuits to {output_path}")
 
