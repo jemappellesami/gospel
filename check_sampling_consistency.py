@@ -7,7 +7,7 @@ import graphix.command
 import numpy as np
 import stim
 import veriphix.client
-from graphix.fundamentals import IXYZ
+from graphix.fundamentals import IXYZ, Plane
 from graphix.noise_models import DepolarisingNoiseModel, NoiseModel
 from graphix.pauli import Pauli
 from graphix.random_objects import Circuit, rand_circuit
@@ -47,11 +47,12 @@ def load_pattern_from_circuit(circuit_label:str):
     with Path(f"circuits/{circuit_label}").open() as f:
         circuit = read_qasm(f)
         pattern = gospel.brickwork_state_transpiler.transpile(circuit)
+        pattern = circuit.transpile().pattern
 
         ## Measure output nodes, to have classical output
         classical_output = pattern.output_nodes
         for onode in classical_output:
-            pattern.add(graphix.command.M(node=onode))
+            pattern.add(graphix.command.M(node=onode, plane=Plane.XY))
 
         states = [BasicStates.PLUS] * len(pattern.input_nodes)
 
@@ -118,19 +119,18 @@ num_instances = 5
 instances = random.sample(circuits, num_instances)
 
 # Noiseless simulation, only need to define the backend, no noise model
-backend = DensityMatrixBackend()
+backend = StatevectorBackend()
 for circuit in instances:
     # Generate a different instance
     pattern, onodes = load_pattern_from_circuit(circuit)
 
     # Instanciate Client and create Test runs
-    client = Client(pattern=pattern, secrets=Secrets(a=False, r=False, theta=False))
+    client = Client(pattern=pattern, secrets=Secrets(a=False, r=False, theta=False), input_state=[BasicStates.PLUS for _ in pattern.input_nodes])
 
     outcomes_sum_all_onodes = {onode:0 for onode in onodes}
-    noise_model = GlobalNoiseModel(prob=p_err, nodes=range(pattern.n_node))
     for i in range(d):
         # print("new round")
-        client.delegate_pattern(backend=backend, noise_model=noise_model)
+        client.delegate_pattern(backend=backend)
         # Record outcomes of all output nodes
         for onode in onodes:
             outcomes_sum_all_onodes[onode] += client.results[onode]
