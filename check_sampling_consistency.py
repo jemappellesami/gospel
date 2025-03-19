@@ -52,7 +52,7 @@ def load_pattern_from_circuit(circuit_label:str):
         ## Measure output nodes, to have classical output
         classical_output = pattern.output_nodes
         for onode in classical_output:
-            pattern.add(graphix.command.M(node=onode, plane=Plane.XY))
+            pattern.add(graphix.command.M(node=onode, plane=Plane.YZ))
 
         states = [BasicStates.PLUS] * len(pattern.input_nodes)
 
@@ -114,7 +114,7 @@ def find_correct_value(circuit_name):
         
 p_err = 0
 outcomes_dict = {}
-d = 100       # nr of computation rounds
+d = 1000       # nr of computation rounds
 num_instances = 5
 instances = random.sample(circuits, num_instances)
 
@@ -125,7 +125,7 @@ for circuit in instances:
     pattern, onodes = load_pattern_from_circuit(circuit)
 
     # Instanciate Client and create Test runs
-    client = Client(pattern=pattern, secrets=Secrets(a=False, r=False, theta=False), input_state=[BasicStates.PLUS for _ in pattern.input_nodes])
+    client = Client(pattern=pattern, secrets=Secrets(a=False, r=False, theta=False), input_state=[BasicStates.ZERO for _ in pattern.input_nodes])
 
     outcomes_sum_all_onodes = {onode:0 for onode in onodes}
     for i in range(d):
@@ -143,5 +143,5 @@ for circuit in instances:
     print("#######")
     print(circuit)
     print(f"Prob. of getting 1: {p}")
-    print(f"{outcome}/100 -> Noiseless outcome: {majority_vote_outcome}")
+    print(f"{outcome}/{d} -> Noiseless outcome: {majority_vote_outcome}")
     print(f"Expected outcome of majority vote: {expected_outcome}")

@@ -12,7 +12,9 @@ from typing import TYPE_CHECKING, assert_never
 import dask.distributed
 import typer
 from dask_jobqueue import SLURMCluster  # type: ignore[attr-defined]
+from graphix.fundamentals import IXYZ, Plane
 from graphix import command
+from graphix.states import BasicStates
 from graphix.noise_models import NoiseModel
 from graphix.rng import ensure_rng
 from graphix.sim.density_matrix import DensityMatrixBackend
@@ -41,7 +43,7 @@ def load_pattern_from_circuit(circuit_label: str) -> tuple[Pattern, list[int]]:
         ## Measure output nodes, to have classical output
         classical_output = pattern.output_nodes
         for onode in classical_output:
-            pattern.add(command.M(node=onode))
+            pattern.add(command.M(node=onode, plane=Plane.YZ))
 
         # states = [BasicStates.PLUS] * len(pattern.input_nodes)
 
@@ -118,7 +120,7 @@ def get_rounds(parameters: Parameters, circuit_name: str) -> Rounds:
     pattern, onodes = load_pattern_from_circuit(circuit_name)
 
     # Instanciate Client and create Test runs
-    client = Client(pattern=pattern, secrets=Secrets(a=True, r=True, theta=True))
+    client = Client(pattern=pattern, secrets=Secrets(a=True, r=True, theta=True), input_state=[BasicStates.ZERO for _ in pattern.input_nodes])
     colours = gospel.brickwork_state_transpiler.get_bipartite_coloring(pattern)
     test_runs = client.create_test_runs(manual_colouring=colours)
 
