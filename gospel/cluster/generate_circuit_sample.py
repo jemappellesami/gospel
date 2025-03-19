@@ -28,7 +28,7 @@ def main():
     with output_path.open("w") as f:
         json.dump(random_circuits, f)  # Save as JSON format
 
-    print(f"Saved {len(circuits)} circuits to {output_path}")
+    print(f"Saved {len(random_circuits)} circuits to {output_path}")
 
 if __name__ == "__main__":
     main()
