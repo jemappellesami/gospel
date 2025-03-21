@@ -86,6 +86,8 @@ class GlobalNoiseModel(NoiseModel):
         # self.node = random.choice(self.nodes)
         self.target_nodes = random.sample(self.nodes, self.n_targets)
         self.attack = int(self.rng.uniform() < self.prob)
+        self.node = random.choice(self.nodes)
+        self.target_nodes = random.sample(self.nodes, self.n_targets)
 
     def input_nodes(self, nodes: list[int]) -> NoiseCommands:
         """Return the noise to apply to input nodes."""
@@ -98,6 +100,8 @@ class GlobalNoiseModel(NoiseModel):
     def confuse_result(self, cmd: BaseM, result: bool) -> bool:
         """Assign wrong measurement result cmd = "M"."""
         if cmd.node in self.target_nodes and self.attack:
+        if cmd.node in self.target_nodes and self.rng.uniform() < self.prob:
+        # if cmd.node == self.node and self.rng.uniform() < self.prob:
             return not result
         return result
 
@@ -177,6 +181,7 @@ def for_each_round(
         # uncorrelated_depolarizing_noise_model = UncorrelatedDepolarisingNoiseModel(entanglement_error_prob=rounds.parameters.p_err)
 
         noise_model = gentle_global_noise_model
+        noise_model = global_noise_model
 
         backend = DensityMatrixBackend()
 
