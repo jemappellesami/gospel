@@ -76,6 +76,7 @@ class GlobalNoiseModel(NoiseModel):
         rng: Generator | None = None,
     ) -> None:
         self.prob = prob
+        self.n_targets = n_targets
         self.nodes = list(nodes)
         self.n_targets = int(len(self.nodes)*target_rate)
         self.refresh_randomness()
