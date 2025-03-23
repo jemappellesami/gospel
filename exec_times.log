@@ -1,0 +1,829 @@
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+Exception ignored in atexit callback: <function close_clusters at 0x1051c5800>
+Traceback (most recent call last):
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/deploy/spec.py", line 700, in close_clusters
+    cluster.close(timeout=10)
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/deploy/spec.py", line 293, in close
+    aw = super().close(timeout)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/deploy/cluster.py", line 223, in close
+    return self.sync(self._close, callback_timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/utils.py", line 363, in sync
+    return sync(
+           ^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/utils.py", line 432, in sync
+    if not wait(timeout):
+           ^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/utils.py", line 425, in wait
+    return e.wait(timeout)
+           ^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask_jobqueue/runner.py", line 18, in <lambda>
+    signal.signal(signal.SIGINT, lambda *_: sys.exit())
+                                            ^^^^^^^^^^
+SystemExit: 
+
+real	0m27.006s
+user	0m42.636s
+sys	0m5.493s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 23, in <module>
+    from distributed.actor import Actor, ActorFuture, BaseActorFuture
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/actor.py", line 15, in <module>
+    from distributed.client import Future
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/client.py", line 47, in <module>
+    from dask.layers import Layer
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/layers.py", line 52, in <module>
+    class ArrayBlockwiseDep(BlockwiseDep):
+KeyboardInterrupt
+
+real	0m0.189s
+user	0m0.089s
+sys	0m0.031s
+
+real	0m0.924s
+user	0m0.479s
+sys	0m0.135s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 3, in <module>
+    from dask import config, datasets
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/datasets.py", line 7, in <module>
+    from dask.utils import import_required
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/utils.py", line 26, in <module>
+    import tlz as toolz
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/tlz/__init__.py", line 9, in <module>
+    from . import _build_tlz
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/tlz/_build_tlz.py", line 92, in <module>
+    tlz_loader.exec_module(sys.modules['tlz'])
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/tlz/_build_tlz.py", line 55, in exec_module
+    toolz_mods = self._load_toolz(module.__name__)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/tlz/_build_tlz.py", line 20, in _load_toolz
+    rv['cytoolz'] = import_module(module_name)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cytoolz/__init__.py", line 22, in <module>
+    from . import curried  # sandbox
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cytoolz/curried/__init__.py", line 27, in <module>
+    from . import operator
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cytoolz/curried/operator.py", line 16, in <module>
+    {name: f if name in IGNORE else curry(f)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+real	0m0.085s
+user	0m0.038s
+sys	0m0.015s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 15, in <module>
+    from dask.delayed import delayed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/delayed.py", line 24, in <module>
+    from dask.highlevelgraph import HighLevelGraph
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/highlevelgraph.py", line 29, in <module>
+    from dask.widgets import get_template
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/widgets/__init__.py", line 4, in <module>
+    from dask.widgets.widgets import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/widgets/widgets.py", line 7, in <module>
+    from jinja2 import Environment, FileSystemLoader, Template
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/__init__.py", line 9, in <module>
+    from .environment import Environment as Environment
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/environment.py", line 20, in <module>
+    from .defaults import BLOCK_END_STRING
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/defaults.py", line 3, in <module>
+    from .filters import FILTERS as DEFAULT_FILTERS  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/filters.py", line 60, in <module>
+    attribute: t.Optional[t.Union[str, int]],
+               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 395, in inner
+    return _caches[func](*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 517, in __getitem__
+    return self._getitem(self, parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 751, in Optional
+    return Union[arg, type(None)]
+           ~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 395, in inner
+    return _caches[func](*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 517, in __getitem__
+    return self._getitem(self, parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 736, in Union
+    return _UnionGenericAlias(self, parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 1277, in __init__
+    self.__module__ = origin.__module__
+    ^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/typing.py", line 1217, in __setattr__
+    super().__setattr__(attr, val)
+KeyboardInterrupt
+
+real	0m0.163s
+user	0m0.069s
+sys	0m0.027s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 3, in <module>
+    import asyncio
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/__init__.py", line 8, in <module>
+    from .base_events import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/base_events.py", line 45, in <module>
+    from . import staggered
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/staggered.py", line 9, in <module>
+    from . import locks
+  File "<frozen importlib._bootstrap>", line 1357, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 418, in __enter__
+  File "<frozen importlib._bootstrap>", line 311, in acquire
+  File "<frozen importlib._bootstrap>", line 170, in __enter__
+  File "<frozen importlib._bootstrap>", line 132, in setdefault
+  File "<frozen importlib._bootstrap>", line 74, in __new__
+KeyboardInterrupt
+
+real	0m0.168s
+user	0m0.076s
+sys	0m0.027s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 15, in <module>
+    from dask.delayed import delayed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/delayed.py", line 24, in <module>
+    from dask.highlevelgraph import HighLevelGraph
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/highlevelgraph.py", line 29, in <module>
+    from dask.widgets import get_template
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/widgets/__init__.py", line 4, in <module>
+    from dask.widgets.widgets import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/widgets/widgets.py", line 7, in <module>
+    from jinja2 import Environment, FileSystemLoader, Template
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/__init__.py", line 9, in <module>
+    from .environment import Environment as Environment
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/environment.py", line 17, in <module>
+    from . import nodes
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1091, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+KeyboardInterrupt
+
+real	0m0.148s
+user	0m0.064s
+sys	0m0.025s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 21, in <module>
+    defaults = yaml.safe_load(f)
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+                 ^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 408, in construct_yaml_seq
+    data.extend(self.construct_sequence(node))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 129, in construct_sequence
+    return [self.construct_object(child, deep=deep)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 100, in construct_object
+    data = constructor(self, node)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 402, in construct_yaml_str
+    def construct_yaml_str(self, node):
+
+KeyboardInterrupt
+
+real	0m0.168s
+user	0m0.088s
+sys	0m0.027s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 15, in <module>
+    from dask.delayed import delayed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/delayed.py", line 24, in <module>
+    from dask.highlevelgraph import HighLevelGraph
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/highlevelgraph.py", line 29, in <module>
+    from dask.widgets import get_template
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/widgets/__init__.py", line 4, in <module>
+    from dask.widgets.widgets import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/widgets/widgets.py", line 7, in <module>
+    from jinja2 import Environment, FileSystemLoader, Template
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/__init__.py", line 9, in <module>
+    from .environment import Environment as Environment
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/environment.py", line 20, in <module>
+    from .defaults import BLOCK_END_STRING
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/jinja2/defaults.py", line 3, in <module>
+    from .filters import FILTERS as DEFAULT_FILTERS  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1091, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+KeyboardInterrupt
+
+real	0m0.146s
+user	0m0.070s
+sys	0m0.025s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 3, in <module>
+    import asyncio
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/__init__.py", line 46, in <module>
+    from .unix_events import *  # pragma: no cover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/unix_events.py", line 17, in <module>
+    from . import base_subprocess
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1091, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+KeyboardInterrupt
+
+real	0m0.169s
+user	0m0.079s
+sys	0m0.028s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 5, in <module>
+    from dask.base import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/base.py", line 72, in <module>
+    from dask.tokenize import TokenizationError, normalize_token, tokenize  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/tokenize.py", line 10, in <module>
+    import pickle
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1128, in get_code
+  File "<frozen importlib._bootstrap_external>", line 757, in _compile_bytecode
+KeyboardInterrupt
+
+real	0m0.127s
+user	0m0.059s
+sys	0m0.022s
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:57: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:39: UserWarning: Couldn't import `kahypar` - skipping from default hyper optimizer and using basic `labels` method instead.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/cotengra/hyperoptimizers/hyper.py:76: UserWarning: Couldn't find `optuna`, `cmaes`, or `nevergrad` so will use completely random sampling in place of hyper-optimization.
+  warnings.warn(
+/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/client.py:3370: UserWarning: Sending large graph of size 18.64 MiB.
+This may cause some slowdown.
+Consider loading the data with Dask directly
+ or using futures or delayed objects to embed the data into the graph without repetition.
+See also https://docs.dask.org/en/stable/best-practices.html#load-data-with-dask for more information.
+  warnings.warn(
+2025-03-23 12:27:44,990 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-9c9201f44ea62978b52afd8c355e1044')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,991 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-565f2a6cf4bfed46f4b6405b5aaceea0')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,990 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-db405a4a505a2101d8edbc044814abf7')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,991 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-e5fd3e6c48e2d8b7b97e83b0bb2e876b')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,991 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-9b488089236e6eeda7208e52d1c49972')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,992 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-f5df16d8a422a56f3e69fac30ac8838c')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,992 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-f2bf9207757f2213dde2c56cc4980735')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:44,992 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('for_all_rounds-07f685b7aceb04b18d825885ca84776c')" coro=<Worker.execute() done, defined at /Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/worker_state_machine.py:3607>> ended with CancelledError
+2025-03-23 12:27:45,054 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53899' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-1d50271ac84b9eb75ae3d56af3aa68c1', 'for_all_rounds-3289e2ca42291744436e68b3dc573c01', 'for_all_rounds-b80a41125495fdc59bb3a5b1d12e43a9', 'for_all_rounds-f7e42d5dd7bfb89177fdb5545dbf6dd5', 'for_all_rounds-b8162ed3b020d3b5e3e6a6f9894aa536', 'for_all_rounds-88d6734b2d345f948de8e97f1b00bab0', 'for_all_rounds-c332954341096af4eaef945d8a6ed3de'} (stimulus_id='handle-worker-cleanup-1742732865.05476')
+2025-03-23 12:27:45,056 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53898' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-ade0aa147a57b4e8b4ec587941bf9efe', 'for_all_rounds-49750efe51627c527e901bbf3250dda1', 'for_all_rounds-dad19cf59ffae255e33d02bbe19ba9bd', 'for_all_rounds-aaeb928fa05c6aa49a6464788889ca53', 'for_all_rounds-18f9e68b8ca37937ea3587ee2009e441', 'for_all_rounds-9906939463c45c7b0c37e328d3677beb', 'for_all_rounds-452d3d921a79502abf501e8e6b312cf8'} (stimulus_id='handle-worker-cleanup-1742732865.056389')
+2025-03-23 12:27:45,056 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53904' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-af67ee3a2c4ec8496604795fbbcce8e4', 'for_all_rounds-ff8749cd435f3ba8ca783b6b6714d22e', 'for_all_rounds-04e1e5ad5ede4ea7d4711ed2e8799d32', 'for_all_rounds-c142f94497a119d38b903d5e3d331e79', 'for_all_rounds-6499a13881ef5cda0cae57fb3adb5335', 'for_all_rounds-cd549e2a51ebea30d3ba81b715027b56'} (stimulus_id='handle-worker-cleanup-1742732865.056714')
+2025-03-23 12:27:45,057 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53889' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-4de3c0737b8e26541b01e85e9f5edaec', 'for_all_rounds-682b2a19905d4098e8a65dd4c3a4a1cc', 'for_all_rounds-da0f91f37cb73c24c028686a0387e6a2', 'for_all_rounds-66584763b8a76ed4ada14879b9f60281', 'for_all_rounds-33b44f585559da0ddab864b68002c49e', 'for_all_rounds-98affb34688414e7dd9c03c7a90d12a9'} (stimulus_id='handle-worker-cleanup-1742732865.056952')
+2025-03-23 12:27:45,057 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53883' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-df9dbebc014111952f710c3d0b33eb47', 'for_all_rounds-1d62efda4deabfff395900604c8467a3', 'for_all_rounds-3ebc88034c569d3cd6dfe39b3e21c331', 'for_all_rounds-8c3f8e78cf569db1b15344c051885503', 'for_all_rounds-efeda80c38bcde45732233d09b47f9cc', 'for_all_rounds-0c073a87150ff53fb72fa7ffa497d3bf', 'for_all_rounds-ec37b05707263c1eb78b70c49c2952c7'} (stimulus_id='handle-worker-cleanup-1742732865.057173')
+2025-03-23 12:27:45,057 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53886' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-a7a01f57821af269bcb2aa539f75b60b', 'for_all_rounds-2aebf21db91e401c4cf0420a2b8c62e8', 'for_all_rounds-a7afb1afa8dcaebca679987ccbde1826', 'for_all_rounds-d83f7637496ed2a2850c6dbe4c54d776', 'for_all_rounds-d04b0f0eb583e3ef486e9b10cbf66758', 'for_all_rounds-af2db5491a05f483e92acaa42f9f1074', 'for_all_rounds-19033a3855846831e646b0db3e77ec4b'} (stimulus_id='handle-worker-cleanup-1742732865.0574179')
+2025-03-23 12:27:45,058 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53887' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-440c1afb9fbe0b5fb3c8d792f41e766e', 'for_all_rounds-4b19220439961067d2020c7e0240c53e', 'for_all_rounds-f990273be9aee74d09287708174b3766', 'for_all_rounds-79933af91ebde1ecd7f0156a31ef1af9', 'for_all_rounds-31e295da4e4f94efc7893aed90d84817', 'for_all_rounds-7d70faf647b408357e24b1e3945cb1bf', 'for_all_rounds-504956336b57a7951957fb77f76869d1'} (stimulus_id='handle-worker-cleanup-1742732865.058274')
+2025-03-23 12:27:45,059 - distributed.scheduler - WARNING - Removing worker 'tcp://127.0.0.1:53888' caused the cluster to lose already computed task(s), which will be recomputed elsewhere: {'for_all_rounds-49df2b7746f5b84aab2f8c327b5a7c89', 'for_all_rounds-70fcdfeb504316ac82208769d16c84d1', 'for_all_rounds-95368f84e2612a3f2dd3de8460e905fa', 'for_all_rounds-761e6a756b1cdf7c63f0a1de5b46da19', 'for_all_rounds-5c3f0afcd07ae91a6a58dad26f66097a', 'for_all_rounds-236c957e8dd56a4fbbbf397dc93167ca'} (stimulus_id='handle-worker-cleanup-1742732865.059062')
+Exception ignored in atexit callback: <function close_clusters at 0x103831800>
+Traceback (most recent call last):
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/deploy/spec.py", line 700, in close_clusters
+    cluster.close(timeout=10)
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/deploy/spec.py", line 293, in close
+    aw = super().close(timeout)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/deploy/cluster.py", line 223, in close
+    return self.sync(self._close, callback_timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/utils.py", line 363, in sync
+    return sync(
+           ^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/utils.py", line 432, in sync
+    if not wait(timeout):
+           ^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/utils.py", line 425, in wait
+    return e.wait(timeout)
+           ^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask_jobqueue/runner.py", line 18, in <lambda>
+    signal.signal(signal.SIGINT, lambda *_: sys.exit())
+                                            ^^^^^^^^^^
+SystemExit: 
+
+real	28m50.069s
+user	180m8.590s
+sys	17m33.342s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 5, in <module>
+    from dask.base import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/base.py", line 19, in <module>
+    from dask import config, local
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/local.py", line 119, in <module>
+    from dask._task_spec import DataNode, DependenciesMapping, convert_legacy_graph
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/_task_spec.py", line 64, in <module>
+    from dask.sizeof import sizeof
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/sizeof.py", line 318, in <module>
+    _register_entry_point_plugins()
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/sizeof.py", line 308, in _register_entry_point_plugins
+    for entry_point in importlib_metadata.entry_points(group="dask.sizeof"):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points
+    return EntryPoints(eps).select(**params)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/importlib/metadata/__init__.py", line 911, in <genexpr>
+    dist.entry_points for dist in _unique(distributions())
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/importlib/metadata/__init__.py", line 471, in entry_points
+    return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/importlib/metadata/__init__.py", line 819, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen codecs>", line 309, in __init__
+KeyboardInterrupt
+
+real	0m0.162s
+user	0m0.054s
+sys	0m0.023s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 5, in <module>
+    from dask.base import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/base.py", line 24, in <module>
+    from dask.system import CPU_COUNT
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1091, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1191, in get_data
+KeyboardInterrupt
+
+real	0m0.157s
+user	0m0.055s
+sys	0m0.020s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 3, in <module>
+    import asyncio
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/__init__.py", line 8, in <module>
+    from .base_events import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/base_events.py", line 34, in <module>
+    import ssl
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/ssl.py", line 138, in <module>
+    _IntEnum._convert_(
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/enum.py", line 943, in _convert_
+    cls = _simple_enum(etype=cls, boundary=boundary or KEEP)(tmp_cls)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/enum.py", line 1840, in convert_class
+    member.__init__(value)
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/enum.py", line 1179, in __init__
+    def __init__(self, *args, **kwds):
+
+KeyboardInterrupt
+
+real	0m0.187s
+user	0m0.080s
+sys	0m0.028s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 3, in <module>
+    import asyncio
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/__init__.py", line 16, in <module>
+    from .queues import *
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1128, in get_code
+  File "<frozen importlib._bootstrap_external>", line 757, in _compile_bytecode
+KeyboardInterrupt
+
+real	0m0.172s
+user	0m0.082s
+sys	0m0.028s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 21, in <module>
+    defaults = yaml.safe_load(f)
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/yaml/scanner.py", line 545, in fetch_value
+    def fetch_value(self):
+
+KeyboardInterrupt
+
+real	0m0.184s
+user	0m0.085s
+sys	0m0.029s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 3, in <module>
+    import asyncio
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/__init__.py", line 8, in <module>
+    from .base_events import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/base_events.py", line 34, in <module>
+    import ssl
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/ssl.py", line 100, in <module>
+    import _ssl             # if we can't import it, let the error propagate
+    ^^^^^^^^^^^
+KeyboardInterrupt
+
+real	0m0.171s
+user	0m0.082s
+sys	0m0.028s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 5, in <module>
+    from dask.base import (
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/base.py", line 1034, in <module>
+    from dask import threaded
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/threaded.py", line 15, in <module>
+    from concurrent.futures import Executor, ThreadPoolExecutor
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/concurrent/futures/__init__.py", line 50, in __getattr__
+    from .thread import ThreadPoolExecutor as te
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1091, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1191, in get_data
+KeyboardInterrupt
+
+real	0m0.147s
+user	0m0.066s
+sys	0m0.025s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 15, in <module>
+    from dask.delayed import delayed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/delayed.py", line 798, in <module>
+    Delayed._bind_operator(op)
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/utils.py", line 1419, in _bind_operator
+    if name.endswith("_"):
+       ^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+real	0m0.163s
+user	0m0.075s
+sys	0m0.026s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/distributed.py", line 13, in <module>
+    from distributed import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/__init__.py", line 4, in <module>
+    from distributed import config  # load distributed configuration first
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/config.py", line 3, in <module>
+    import asyncio
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/__init__.py", line 8, in <module>
+    from .base_events import *
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/base_events.py", line 45, in <module>
+    from . import staggered
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/asyncio/staggered.py", line 10, in <module>
+    from . import tasks
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1091, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+KeyboardInterrupt
+
+real	0m0.171s
+user	0m0.083s
+sys	0m0.027s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sabdulsa/Codes/gospel/gospel/cluster/run_veriphix.py", line 12, in <module>
+    import dask.distributed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/__init__.py", line 15, in <module>
+    from dask.delayed import delayed
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/delayed.py", line 24, in <module>
+    from dask.highlevelgraph import HighLevelGraph
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/highlevelgraph.py", line 997, in <module>
+    @normalize_token.register(HighLevelGraph)
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/dask/utils.py", line 717, in register
+    def register(self, type, func=None):
+
+KeyboardInterrupt
+
+real	0m0.159s
+user	0m0.074s
+sys	0m0.026s
