@@ -8,14 +8,8 @@ import json
 import os
 import pandas as pd
 
-<<<<<<< HEAD
-folder = "MALICIOUS-outcomes-n5"
-# folder = "STRONG-outcomes-n5"
-# folder = "UNCOR_DEPOL-outcomes-n5"
-=======
 
-folder = "DEPOL-outcomes-n5-d30"
->>>>>>> simulation-results
+folder = "results/sas/DEPOL-outcomes-n5-d30"
 threshold_values = [1]
 d = 100
 
@@ -127,3 +121,17 @@ plt.plot(p_values, [proportion_wrong_outcomes_dict[prob] for prob in p_values])
 #         writer.writerow([t] + comp_failure_rates)
 
 # print(f"Data saved to {filename}")
+
+readmefile = folder + "/README.md"
+with open(readmefile, "w") as file:
+    with open("circuits/README.md", "r") as circuits_readme_file :
+        circuits_readme_lines =  circuits_readme_file.readlines()
+
+        with open("gospel/cluster/sampled_circuits.txt", "r") as sampled_circuits_file:
+            sampled_circuits_lines = sampled_circuits_file.readlines()
+
+            lines = [circuits_readme_lines,
+                     sampled_circuits_lines
+            ]
+            for line in circuits_readme_lines + sampled_circuits_lines:
+                file.write(line)
