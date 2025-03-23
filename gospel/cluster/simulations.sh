@@ -14,15 +14,15 @@ n_nodes=$n_instances
 
 
 # echo "GENTLE GLOBAL NOISE (remaining)"
-# # Gentle global noise
-# for p_err in 0.2 0.3 0.5 0.7 ; do
+# Gentle global noise
+# for p_err in 0.7 ; do
 #   PORT=24395
 
-#   # Print p and assigned port
+   # Print p and assigned port
 #   echo "Running with p_err=$p_err, PORT=$PORT"
 
 #   # Run the process in the background
-#   time python -m gospel.cluster.run_veriphix $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes
+#   (time python -m gospel.cluster.run_veriphix $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes) 2>> exec_times.log
 
 # done
 
@@ -63,7 +63,7 @@ n_nodes=$n_instances
 echo "DEPOLARIZING (CORRELATED)"
 # Depolarizing
 for p_err in 0.0001 ; do
-  PORT=24395
+  PORT=35407
 
   # Print p and assigned port
   echo "Running with p_err=$p_err, PORT=$PORT"
@@ -76,7 +76,7 @@ done
 echo "DEPOLARIZING (UNCORRELATED)"
 # Depolarizing
 for p_err in 0.0005 0.0001 0.0025 ; do
-  PORT=24395
+  PORT=35407
 
   # Print p and assigned port
   echo "Running with p_err=$p_err, PORT=$PORT"
