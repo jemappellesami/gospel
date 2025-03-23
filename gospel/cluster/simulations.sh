@@ -69,7 +69,7 @@ for p_err in 0.0001 ; do
   echo "Running with p_err=$p_err, PORT=$PORT"
 
   # Run the process in the background
-  time python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes
+  time python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes
 
 done
 
@@ -82,7 +82,7 @@ for p_err in 0.0005 0.0001 0.0025 ; do
   echo "Running with p_err=$p_err, PORT=$PORT"
 
   # Run the process in the background
-  time python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes
+  time python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes
 
 done
 
