@@ -12,6 +12,7 @@ n_comp_run=100
 n_test_run=100
 n_nodes=$n_instances
 
+echo "dummy change"
 
 # echo "GENTLE GLOBAL NOISE (remaining)"
 # # Gentle global noise
