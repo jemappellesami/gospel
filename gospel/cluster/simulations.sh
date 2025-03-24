@@ -33,7 +33,7 @@ for p_err in 0.01 0.05 0.08 ; do
   # nohup python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --scale 12 & 
 
   # Run the process in the background on the cluster
-  python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+  python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 6 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
 done
 
