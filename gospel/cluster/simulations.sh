@@ -19,7 +19,7 @@ rm -rf circuits
 python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 5 --depth 30 --p-gate 0.5 --p-cnot 0.25 --p-cnot-flip 0.5 --p-rx 0.5 --seed 1729 --target circuits
 git checkout sim-verif
 mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
-mv gospel/cluster/sampled_circuits.holl.txt gospel/cluster/sampled_circuits.txt
+cp gospel/cluster/sampled_circuits.holl.txt gospel/cluster/sampled_circuits.txt
 
 # Gentle Global Noise
 for p_err in 0.05 0.10 0.20 0.30 0.40 0.50 0.60 0.70 0.80 0.90 1.00 ; do
@@ -101,7 +101,7 @@ rm -rf circuits
 python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 5 --depth 30 --p-gate 0.5 --p-cnot 0.25 --p-cnot-flip 0.5 --p-rx 0.5 --seed 1729 --target circuits
 git checkout sim-verif
 mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
-mv gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
+cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
 echo "DEPOLARIZING (UNCORRELATED)"
 # Depolarizing
 for p_err in 0.00007 0.0001 ; do
