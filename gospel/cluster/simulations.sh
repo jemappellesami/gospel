@@ -20,21 +20,21 @@ git checkout sim-verif
 mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
 cp gospel/cluster/sampled_circuits.holl.txt gospel/cluster/sampled_circuits.txt
 
-# echo "MALICIOUS"
-# # Malicious model
-# for p_err in 0.01 0.05 0.08 ; do
-#   PORT=24396
+echo "MALICIOUS"
+# Malicious model
+for p_err in 0.01 0.05 0.08 ; do
+  PORT=24396
 
-# #   # Print p and assigned port
-# #   echo "Running with p_err=$p_err, PORT=$PORT"
+#   # Print p and assigned port
+#   echo "Running with p_err=$p_err, PORT=$PORT"
 
-#   # Run the process in the background locally
-#   # nohup python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --scale 12 & 
+  # Run the process in the background locally
+  python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --scale 12 
 
-#   # Run the process in the background on the cluster
-#   python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 6 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+  # Run the process in the background on the cluster
+  # python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 6 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
-# done
+done
 
 # # Gentle Global Noise
 # for p_err in 0.05 0.10 0.20 0.30 0.40 0.50 0.60 0.70 0.80 0.90 1.00 ; do
