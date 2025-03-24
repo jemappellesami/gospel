@@ -9,10 +9,10 @@ import os
 import pandas as pd
 
 
-folder = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
-noise_type = "DEPOLARIZING (UNCOR.)"
-threshold_values = [1]
+folder = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
+noise_type = "MALICIOUS GLOBAL"
 d = 100
+s = 100
 
 bqp_error=0.4
 with Path("gospel/cluster/sampled_circuits.txt").open() as f:
@@ -40,6 +40,7 @@ for file in os.listdir(folder):
         files_dict[prob] = file_path
     
 p_values = sorted(list([float(i) for i in files_dict.keys()]))
+print(p_values)
 
 def get_harold_table():
     harold_table = pd.DataFrame()
@@ -53,7 +54,7 @@ def get_failure_rate(threshold_values:list[float]):
     plot_data = pd.DataFrame()
     plot_data.index = p_values
     average_wrong_decisions_list = []
-    proportion_failed_instances_list = []
+    proportion_failed_instances_dict = {w:[] for w in threshold_values}
     test_round_failure_list = []
 
     # harold_table = pd.DataFrame()
@@ -66,8 +67,7 @@ def get_failure_rate(threshold_values:list[float]):
         df = pd.DataFrame.from_dict(json_data, orient='index')
 
         # Recording test round failure rate
-        test_round_failure_rate = df["n_failed_trap_rounds"].mean()/d
-        print(prob, test_round_failure_rate)
+        test_round_failure_rate = df["n_failed_trap_rounds"].mean()/s
         test_round_failure_list.append(test_round_failure_rate)
         
         # Recording failed instances (number of wrong decisions, and number of wrongly-decided instances after majority vote)
@@ -78,7 +78,6 @@ def get_failure_rate(threshold_values:list[float]):
         # This lambda returns the number of bad decisions for `circuit` if the number of `1` obtained is `s`.
         test_lambda = lambda s, circuit : (d-s) if find_correct_value(circuit_name=circuit) else s
         wrong_decisions = [test_lambda(s=df.loc[circuit]["outcome_sum"], circuit=circuit)/d for circuit in df.index]
-        print(len(circuits))
         average_wrong_decisions = sum(wrong_decisions)/len(circuits)
         average_wrong_decisions_list.append(average_wrong_decisions)
 
@@ -87,8 +86,9 @@ def get_failure_rate(threshold_values:list[float]):
         # df["outcome_sum"].apply(lambda s: s if find_correct_value(circuit_name=) else (d-s))
 
         # print(harold_table)
-        proportion_wrong_outcomes = len(df[df['majority vote outcome'] != df["expected_outcome"]])
-        proportion_failed_instances_list.append(proportion_wrong_outcomes/len(circuits))
+        for w in threshold_values:
+            proportion_wrong_outcomes = len(df[(df['majority vote outcome'] != df["expected_outcome"]) & (df["n_failed_trap_rounds"] < w*s)])
+            proportion_failed_instances_dict[w].append(proportion_wrong_outcomes/len(circuits))
 
         print(f"p={prob} => {proportion_wrong_outcomes} instances /100 gave more than 50% wrong decisions")
         if proportion_wrong_outcomes != 0:
@@ -99,25 +99,32 @@ def get_failure_rate(threshold_values:list[float]):
         df.to_csv(f"{folder}/summary-p{prob}.csv")
         # print("Too fragile instances")
         # print(df[(df['bqp_error'] > 0.3) & (df['bqp_error'] < 0.7)])
-            
+    
     plot_data["Average wrong decisions"] = average_wrong_decisions_list
-    plot_data["Proportion of failed instances"] = proportion_failed_instances_list
+
+    for w in threshold_values:
+        plot_data[f"Proportion of failed instances (w={w})"] = proportion_failed_instances_dict[w]
     plot_data["Test round failure rate"] = test_round_failure_list
 
     return plot_data, harold_table
 
 
-plot_data, harold_table = get_failure_rate(threshold_values=[1])
+threshold_values = [0.08]
+colors = {1:'red', 0.08:'blue', 0.15:'green'}
+plot_data, harold_table = get_failure_rate(threshold_values=threshold_values)
 harold_table.to_csv(f"{folder}/final-summary.csv")
 plot_data.to_csv(f"{folder}/final-summary-wrong_decisions.csv")
 
 plt.figure()
-plt.title(f"rVBQC protocol analysis in presence of {noise_type} noise with probability " + '$p_{err}$')
+plt.title(f"Proportion of corrupted instances accepted according to threshold " + '$w$')
 plt.xlabel('$p_{err}$')
 # plt.ylabel("Rate")
 plt.ylim(0,1)
 # plt.scatter(p_values, plot_data["Average wrong decisions"], label="Average rate of wrong decisions")
-plt.scatter(p_values, plot_data["Proportion of failed instances"], label="Proportion of wrongly-decided instances (after majority vote)", marker="o", color='red')
+
+for w in threshold_values:
+    plt.scatter(p_values, plot_data[f"Proportion of failed instances (w={w})"], label=f"w={w}", marker="o", color=colors.get(w, 'blue'))
+
 plt.scatter(p_values, plot_data["Test round failure rate"], label="Proportion of failed test rounds", marker="*", color='black')
 plt.legend()
 # plt.grid()

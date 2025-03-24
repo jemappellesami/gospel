@@ -118,3 +118,21 @@ done
 wait  # Ensure all background jobs complete
 
 echo "All jobs completed!"
+
+
+# Loaded 100 circuits.
+# /home/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/node.py:187: UserWarning: Port 35407 is already in use.
+# Perhaps you already have a cluster running?
+# Hosting the HTTP server on port 43995 instead
+#   warnings.warn(
+# /home/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/node.py:187: UserWarning: Port 35407 is already in use.
+# Perhaps you already have a cluster running?
+# Hosting the HTTP server on port 39437 instead
+#   warnings.warn(
+# Loaded 100 circuits.
+# Loaded 100 circuits.
+# /home/sabdulsa/miniconda3/envs/gospel/lib/python3.12/site-packages/distributed/node.py:187: UserWarning: Port 35407 is already in use.
+# Perhaps you already have a cluster running?
+# Hosting the HTTP server on port 42813 instead
+#   warnings.warn(
+# Loaded 100 circuits.
