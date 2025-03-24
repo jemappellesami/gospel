@@ -104,7 +104,7 @@ mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt
 cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
 echo "DEPOLARIZING (UNCORRELATED)"
 # Depolarizing
-for p_err in 0.0001 ; do
+for p_err in 0.0009 0.0008 0.0007 0.0018 ; do
   PORT=35407
 
   # Print p and assigned port
