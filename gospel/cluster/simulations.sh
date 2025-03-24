@@ -96,13 +96,13 @@ n_nodes=$n_instances
 # done
 
 echo "Simulations on SAS circuits"
-git checkout 143645c8cedcd2c0e14dd58e991b610ad7385d7a
-rm -rf circuits
-python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 5 --depth 30 --p-gate 0.5 --p-cnot 0.25 --p-cnot-flip 0.5 --p-rx 0.5 --seed 1729 --target circuits
-git checkout sim-verif
-mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
-cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
-echo "DEPOLARIZING (UNCORRELATED)"
+# git checkout 143645c8cedcd2c0e14dd58e991b610ad7385d7a
+# rm -rf circuits
+# python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 5 --depth 30 --p-gate 0.5 --p-cnot 0.25 --p-cnot-flip 0.5 --p-rx 0.5 --seed 1729 --target circuits
+# git checkout sim-verif
+# mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
+# cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
+# echo "DEPOLARIZING (UNCORRELATED)"
 # Depolarizing
 for p_err in 0.0009 0.0008 0.0007 0.0018 ; do
   PORT=35407
@@ -111,7 +111,7 @@ for p_err in 0.0009 0.0008 0.0007 0.0018 ; do
   echo "Running with p_err=$p_err, PORT=$PORT"
 
   # Run the process in the background
-  time python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes
+  time python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
 done
 
