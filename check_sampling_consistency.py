@@ -135,13 +135,17 @@ for circuit in instances:
         for onode in onodes:
             outcomes_sum_all_onodes[onode] += client.results[onode]
         
+    
     # Save the outcome of the first qubit by default    
     outcomes_dict[circuit] = outcomes_sum_all_onodes[onodes[0]]
     outcome = int(outcomes_dict[circuit])
     majority_vote_outcome = "Ambig." if outcome == d/2 else int(outcome>d/2)
     p, expected_outcome = find_correct_value(circuit_name=circuit)
-    print("#######")
-    print(circuit)
-    print(f"Prob. of getting 1: {p}")
-    print(f"{outcome}/100 -> simulation outcome: {majority_vote_outcome}")
-    print(f"Expected outcome of majority vote: {expected_outcome}")
+
+    delta = 2
+    if (p > 0.6 and outcome <= 50+delta) or (p<0.4 and outcome > 50-delta):
+        print("#######")
+        print(circuit)
+        print(f"Prob. of getting 1: {p}")
+        print(f"{outcome}/{d} -> simulation outcome: {majority_vote_outcome}")
+        print(f"Expected outcome of majority vote: {expected_outcome}")

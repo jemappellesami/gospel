@@ -85,7 +85,7 @@ class MaliciousModel(NoiseModel):
     def refresh_randomness(self) -> None:
         # self.node = random.choice(self.nodes)
         # self.target_nodes = random.sample(self.nodes, self.n_targets)
-        self.attack = int(self.rng.uniform() < self.prob)
+        self.attack = bool(self.rng.uniform() < self.prob)
 
     def input_nodes(self, nodes: list[int]) -> NoiseCommands:
         """Return the noise to apply to input nodes."""
@@ -161,11 +161,12 @@ def for_each_round(
 ) -> ComputationResult:
     rounds, i = args
     try:
-        logging.warning(f"{rounds.circuit_name}::{i}")
         malicious_model = MaliciousModel(
             prob=rounds.parameters.p_err,
             nodes=[rounds.onodes[0]]
         )
+        if malicious_model.attack:
+            print(f"attack on {rounds.circuit_name}::{i}")
         # gentle_global_noise_model = GlobalNoiseModel(
         #     prob=rounds.parameters.p_err,
         #     nodes=range(rounds.client.initial_pattern.n_node),
@@ -201,7 +202,7 @@ def for_each_round(
 
 
 def for_all_rounds(rounds: Rounds) -> tuple[str, list[ComputationResult]]:
-    logging.warning(rounds.circuit_name)
+    # logging.warning(rounds.circuit_name)
     return rounds.circuit_name, [for_each_round((rounds, i)) for i in rounds.rounds]
 
 
