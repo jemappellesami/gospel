@@ -22,17 +22,17 @@ cp gospel/cluster/sampled_circuits.holl.txt gospel/cluster/sampled_circuits.txt
 
 echo "MALICIOUS"
 # Malicious model
-for p_err in 0.01 ; do
+for p_err in 0.01 0.05 0.08; do
   PORT=24396
 
 #   # Print p and assigned port
 #   echo "Running with p_err=$p_err, PORT=$PORT"
 
   # Run the process in the background locally
-  python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error
+  # python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error
 
   # Run the process in the background on the cluster
-  # python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 6 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+  python -m gospel.cluster.run_veriphix-malicious $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 6 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
 done
 
