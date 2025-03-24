@@ -45,7 +45,7 @@ def load_pattern_from_circuit(circuit_label: str) -> tuple[Pattern, list[int]]:
 
         ## Measure output nodes, to have classical output
         classical_output = pattern.output_nodes
-        print(classical_output)
+        # print(classical_output)
         for onode in classical_output:
             pattern.add(command.M(node=onode))
 
