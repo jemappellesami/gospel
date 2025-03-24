@@ -104,7 +104,7 @@ echo "Simulations on SAS circuits"
 # cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
 # echo "DEPOLARIZING (UNCORRELATED)"
 # Depolarizing
-for p_err in 0.000005 0.000009 ; do
+for p_err in 0.00005 0.00009 ; do
   PORT=35407
 
   # Print p and assigned port
