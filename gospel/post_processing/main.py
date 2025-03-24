@@ -9,8 +9,8 @@ import os
 import pandas as pd
 
 
-folder = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
-noise_type = "MALICIOUS GLOBAL"
+folder = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
+noise_type = "UNCOR DEPOL"
 d = 100
 s = 100
 
