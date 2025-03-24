@@ -9,8 +9,8 @@ import os
 import pandas as pd
 
 
-folder = "results/sas/GENTLE-outcomes-n5-d30"
-noise_type = "GENTLE GLOBAL"
+folder = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
+noise_type = "DEPOLARIZING (UNCOR.)"
 threshold_values = [1]
 d = 100
 
