@@ -1,5 +1,5 @@
 
-    These results have been generated in lines with the following settings:
+These results have been generated in lines with the following settings:
 
     ```
     git checkout 629616845598b2c8b932a9014798d0b6989caede
