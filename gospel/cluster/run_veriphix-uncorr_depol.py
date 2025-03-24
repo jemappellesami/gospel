@@ -173,7 +173,7 @@ def for_each_round(
         # )
 
         # depolarizing_noise_model = DepolarisingNoiseModel(entanglement_error_prob=rounds.parameters.p_err)
-        uncorrelated_depolarizing_noise_model = UncorrelatedDepolarisingNoiseModel(measure_channel_prob=rounds.parameters.p_err)
+        uncorrelated_depolarizing_noise_model = UncorrelatedDepolarisingNoiseModel(entanglement_error_prob=rounds.parameters.p_err)
 
         noise_model = uncorrelated_depolarizing_noise_model
 
