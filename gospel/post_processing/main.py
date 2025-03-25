@@ -45,6 +45,18 @@ def find_correct_value(circuit_name):
         # print(table[circuit_name])
         return(int(table[circuit_name] > 1-bqp_error))
     
+
+def find_critical_prob(model, threshold=0.1):
+    summary_df = pd.read_csv(model + "/final-summary-wrong_decisions.csv", index_col=0)
+    print(summary_df)
+    # Find the index where "Test round failure rate" first exceeds the threshold
+    for index, row in summary_df.iterrows():
+        if row["Test round failure rate"] > threshold:
+            print(index)
+            return index
+    
+    return None  # Return None if no such index is found
+
 def find_prob(circuit_name):
     with Path("circuits/table.json").open() as f:
         table = json.load(f)
@@ -213,6 +225,11 @@ if colorful:
         #     plt.fill_between(p_values, lower, upper, 
         #                     facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
 
+else:
+    lower, upper = 0, 1
+    print(find_critical_prob(model=folder, threshold=0.1))
+    plt.fill_between(prob_values, lower, upper, where=(prob_values >= find_critical_prob(model=folder, threshold=0.1)), 
+                            facecolor='none', hatch='/', edgecolor='black', linewidth=1)
 # Scatter plots
 for w in threshold_values:
     plt.scatter(p_values, plot_data[f"Proportion of failed instances (w={w})"], 
