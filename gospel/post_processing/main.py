@@ -9,11 +9,11 @@ import os
 import pandas as pd
 
 
-folder = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
-noise_type = "MALICIOUS"
+folder = "results/sas/DEPOL-outcomes-n5-d30"
+noise_type = "DEPOL"
 d = 100
 s = 100
-delta = 0.15
+delta = 0
 
 bqp_error=0.4
 with Path("gospel/cluster/sampled_circuits.txt").open() as f:
@@ -41,6 +41,8 @@ for file in os.listdir(folder):
         files_dict[prob] = file_path
     
 p_values = sorted(list([float(i) for i in files_dict.keys()]))
+if noise_type == "UNCOR DEPOL":
+    p_values = p_values[:-1]
 print(p_values)
 
 def get_harold_table():
@@ -120,7 +122,7 @@ harold_table.to_csv(f"{folder}/final-summary.csv")
 plot_data.to_csv(f"{folder}/final-summary-wrong_decisions.csv")
 
 plt.figure()
-plt.title(f"Proportion of corrupted instances accepted according to threshold $w$, $|c|<{0.5-delta}$")
+plt.title(f"Proportion of corrupted instances accepted according to threshold $w$, $|c|<{0.5-delta}$, {noise_type}")
 plt.xlabel('$p_{err}$')
 # plt.ylabel("Rate")
 plt.ylim(0,1)
