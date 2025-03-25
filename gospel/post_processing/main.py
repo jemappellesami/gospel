@@ -9,10 +9,11 @@ import os
 import pandas as pd
 
 
-folder = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
-noise_type = "UNCOR DEPOL"
+folder = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
+noise_type = "MALICIOUS"
 d = 100
 s = 100
+delta = 0.15
 
 bqp_error=0.4
 with Path("gospel/cluster/sampled_circuits.txt").open() as f:
@@ -40,7 +41,6 @@ for file in os.listdir(folder):
         files_dict[prob] = file_path
     
 p_values = sorted(list([float(i) for i in files_dict.keys()]))
-p_values = p_values[:-1]
 print(p_values)
 
 def get_harold_table():
@@ -87,15 +87,18 @@ def get_failure_rate(threshold_values:list[float]):
         # df["outcome_sum"].apply(lambda s: s if find_correct_value(circuit_name=) else (d-s))
 
         # print(harold_table)
-        for w in threshold_values:
-            proportion_wrong_outcomes = len(df[(df['majority vote outcome'] != df["expected_outcome"]) & (df["n_failed_trap_rounds"] < w*s)])
-            proportion_failed_instances_dict[w].append(proportion_wrong_outcomes/len(circuits))
+        for w in (threshold_values):
+            proportion_wrong_outcomes = len(df[(df['majority vote outcome'] != df["expected_outcome"]) 
+                                               & (df["n_failed_trap_rounds"] < w*s)
+                                               & (abs(df["bqp_error"]-0.5 >= delta))
+                                               ])
+            proportion_failed_instances_dict[w].append(proportion_wrong_outcomes/len(df[(abs(df["bqp_error"]-0.5 >= delta))]))
 
-        print(f"p={prob} => {proportion_wrong_outcomes} instances /100 gave more than 50% wrong decisions")
-        if proportion_wrong_outcomes != 0:
-            print("Incorrect decision dataframe")
-            print(df[df['majority vote outcome'] != df["expected_outcome"]])
-            print("#######")
+            print(f"w={w}, p={prob} => {proportion_wrong_outcomes} instances /100 gave more than 50% wrong decisions")
+            if proportion_wrong_outcomes != 0:
+                print("Incorrect decision dataframe")
+                print(df[df['majority vote outcome'] != df["expected_outcome"]])
+                print("#######")
 
         df.to_csv(f"{folder}/summary-p{prob}.csv")
         # print("Too fragile instances")
@@ -110,21 +113,21 @@ def get_failure_rate(threshold_values:list[float]):
     return plot_data, harold_table
 
 
-threshold_values = [0.1, 0.6, 0.7]
-# colors = {1:'red', 0.08:'blue', 0.15:'green'}
+threshold_values = [1, 0.15, 0.08]
+colors = {1:'green', 0.08:'blue', 0.15:'red', 0.25:'orange'}
 plot_data, harold_table = get_failure_rate(threshold_values=threshold_values)
 harold_table.to_csv(f"{folder}/final-summary.csv")
 plot_data.to_csv(f"{folder}/final-summary-wrong_decisions.csv")
 
 plt.figure()
-plt.title(f"Proportion of corrupted instances accepted according to threshold" + ' $w$ ' + f"({noise_type})")
+plt.title(f"Proportion of corrupted instances accepted according to threshold $w$, $|c|<{0.5-delta}$")
 plt.xlabel('$p_{err}$')
 # plt.ylabel("Rate")
 plt.ylim(0,1)
 # plt.scatter(p_values, plot_data["Average wrong decisions"], label="Average rate of wrong decisions")
 
 for w in threshold_values:
-    plt.scatter(p_values, plot_data[f"Proportion of failed instances (w={w})"], label=f"w={w}", marker="o")
+    plt.scatter(p_values, plot_data[f"Proportion of failed instances (w={w})"], label=f"w={w}", marker="o", color=colors.get(w, 'blue'))
 
 plt.scatter(p_values, plot_data["Test round failure rate"], label="Proportion of failed test rounds", marker="*", color='black')
 plt.legend()
