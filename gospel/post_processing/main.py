@@ -9,9 +9,15 @@ import json
 import os
 
 MALICIOUS = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
+GENTLE_GLOBAL = "results/sas/GENTLE-outcomes-n5-d30"
+STRONG_GLOBAL = "results/holl/STRONG-outcomes-n5/glob"
 UNCOR_DEPOL = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
+DEPOL = "results/sas/DEPOL-outcomes-n5-d30"
+
+
+colorful = False
 folder = MALICIOUS
-noise_type = "MALICIOUS"
+noise_type = folder.split('/')[2].split('-')[0]
 d = 100
 s = 100
 
@@ -102,9 +108,9 @@ def get_failure_rate(threshold_values:list[float]):
             accepted_instances =  df[(df["n_failed_trap_rounds"] < w*s)]
             filtered_accepted_instances = df[
                 (abs(df["bqp_error"]-0.5 >= delta))
-                # & (df["n_failed_trap_rounds"] < w*s)
+                & (df["n_failed_trap_rounds"] < w*s)
                 ]
-            if len(accepted_instances) != 0:
+            if len(filtered_accepted_instances) != 0:
                 # proportion = proportion_wrong_outcomes/len(circuits)
                 proportion = proportion_wrong_outcomes/len(filtered_accepted_instances)
             else:
@@ -135,7 +141,7 @@ def get_failure_rate(threshold_values:list[float]):
 
 
 
-threshold_values = [1, 0.15, 0.22, 0.08]
+threshold_values = ([1, 0.2, 0.15,  0.08])
 colors_list = [
     ("red", "white"),
     ("green", "lightgreen"),
@@ -154,8 +160,11 @@ harold_table.to_csv(f"{folder}/final-summary.csv")
 plot_data.to_csv(f"{folder}/final-summary-wrong_decisions.csv")
 
 
+
+
+
 plt.figure()
-plt.title(f"Proportion of corrupted instances accepted according to threshold $\omega$, $|c|<{round(0.5-delta, 3)}$, {noise_type}")
+# plt.title(f"Proportion of corrupted instances accepted according to threshold $\omega$, $|c|<{round(0.5-delta, 3)}$, {noise_type}")
 plt.xlabel('$p_{err}$')
 plt.ylim(0, 1)
 plt.xlim(0, 1)
@@ -165,25 +174,29 @@ opacity = 0.5  # Adjust opacity here
 for i in range(len(boundary_lines)):
     lower = boundary_lines[i - 1] if i > 0 else 0  # Start from 0
     upper = boundary_lines[i]
-    plt.axhspan(lower, upper, color=colors[upper][1], alpha=opacity, edgecolor='black', linewidth=1)
+    if colorful:
+        plt.axhspan(lower, upper, color=colors[upper][1], alpha=opacity, edgecolor='black', linewidth=1)
+    else:
+        plt.axhspan(lower, upper, color="white", alpha=opacity, edgecolor='black', linewidth=1)
 
-# Adding hatched regions
-for i in range(len(boundary_lines)):
-    lower = boundary_lines[i - 1] if i > 0 else 0
-    upper = boundary_lines[i]
+if colorful:
+    # Adding hatched regions
+    for i in range(len(boundary_lines)):
+        lower = boundary_lines[i - 1] if i > 0 else 0
+        upper = boundary_lines[i]
 
-    if upper == threshold_values[1]:
-        plt.fill_between(p_values, lower, upper, where=(p_values > 0.2), 
-                         facecolor='none', hatch='/', edgecolor='gray', linewidth=0)
-    elif upper == threshold_values[2]:
-        plt.fill_between(p_values, lower, upper, where=(p_values > 0.3), 
-                         facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
-    elif upper == threshold_values[3]:
-        plt.fill_between(p_values, lower, upper, where=(p_values > 0.4), 
-                         facecolor='none', hatch='/', edgecolor='gray', linewidth=0)
-    # elif upper == 1:  # Hatch the entire zone
-    #     plt.fill_between(p_values, lower, upper, 
-    #                      facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
+        if upper == threshold_values[3]:
+            plt.fill_between(p_values, lower, upper, where=(p_values >= 0.2), 
+                            facecolor='none', hatch='/', edgecolor='black', linewidth=1)
+        elif upper == threshold_values[2]:
+            plt.fill_between(p_values, lower, upper, where=(p_values >= 0.3), 
+                            facecolor='none', hatch='\\', edgecolor='black', linewidth=1)
+        elif upper == threshold_values[1]:
+            plt.fill_between(p_values, lower, upper, where=(p_values >= 0.4), 
+                            facecolor='none', hatch='/', edgecolor='black', linewidth=1)
+        elif upper == 1:  # Hatch the entire zone
+            plt.fill_between(p_values, lower, upper, 
+                            facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
 
 # Scatter plots
 for w in threshold_values:
@@ -195,7 +208,7 @@ plt.scatter(p_values, plot_data["Test round failure rate"],
 
 plt.gcf().set_size_inches(8.5, 6)
 plt.legend()
-plt.savefig(folder + "/" + noise_type + "_plot.png")
+plt.savefig(folder + "/" + noise_type + "_plot.pdf")
 plt.show()
 
 
@@ -221,7 +234,7 @@ plt.show()
 
 readmefile = folder + "/README.md"
 with open(readmefile, "w") as file:
-    if noise_type in ["MALICIOUS", "GENTLE GLOBAL", "STRONG GLOBAL"]:
+    if noise_type in ["MALICIOUS", "GENTLE", "STRONG"]:
         content = """
 These results have been generated in lines with the following settings:
 
