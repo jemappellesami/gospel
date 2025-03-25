@@ -8,5 +8,4 @@ python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 
 git checkout sim-verif
 mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
 cp gospel/cluster/sampled_circuits.holl.txt gospel/cluster/sampled_circuits.txt
-```
-    
+    ```

@@ -142,10 +142,10 @@ for circuit in instances:
     majority_vote_outcome = "Ambig." if outcome == d/2 else int(outcome>d/2)
     p, expected_outcome = find_correct_value(circuit_name=circuit)
 
-    delta = 2
-    if (p > 0.6 and outcome <= 50+delta) or (p<0.4 and outcome > 50-delta):
-        print("#######")
-        print(circuit)
-        print(f"Prob. of getting 1: {p}")
-        print(f"{outcome}/{d} -> simulation outcome: {majority_vote_outcome}")
-        print(f"Expected outcome of majority vote: {expected_outcome}")
+    # delta = 2
+    # if (p > 0.6 and outcome <= 50+delta) or (p<0.4 and outcome > 50-delta):
+    print("#######")
+    print(circuit)
+    print(f"Prob. of getting 1: {p}")
+    print(f"{outcome}/{d} -> simulation outcome: {majority_vote_outcome}")
+    print(f"Expected outcome of majority vote: {expected_outcome}")

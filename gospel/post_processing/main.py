@@ -7,19 +7,24 @@ import numpy as np
 import csv
 import json
 import os
-
 MALICIOUS = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
 GENTLE_GLOBAL = "results/sas/GENTLE-outcomes-n5-d30"
 STRONG_GLOBAL = "results/holl/STRONG-outcomes-n5/glob"
 UNCOR_DEPOL = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
 DEPOL = "results/sas/DEPOL-outcomes-n5-d30"
+plots_folder = "results/plots"
 
 
 colorful = False
-folder = UNCOR_DEPOL
 threshold_values = ([1])
+folder = DEPOL
 
 noise_type = folder.split('/')[2].split('-')[0]
+
+if noise_type in ["MALICIOUS", "GENTLE", "STRONG"] :
+    sampled_circuits = "gospel/cluster/sampled_circuits.holl.txt"
+else :
+    sampled_circuits = "gospel/cluster/sampled_circuits.sas.txt"
 d = 100
 s = 100
 
@@ -29,7 +34,7 @@ s = 100
 delta = 0.5-1/np.e
 
 bqp_error=0.4
-with Path("gospel/cluster/sampled_circuits.txt").open() as f:
+with Path(sampled_circuits).open() as f:
     circuits = json.load(f)
 
 def find_correct_value(circuit_name):
@@ -170,7 +175,8 @@ plt.figure()
 # plt.title(f"Proportion of corrupted instances accepted according to threshold $\omega$, $|c|<{round(0.5-delta, 3)}$, {noise_type}")
 plt.xlabel('$p_{err}$')
 plt.ylim(0, 1)
-# plt.xlim(0, 1)
+if noise_type in ["MALICIOUS", "GENTLE", "STRONG"] :
+    plt.xlim(0, 1)
 
 # Coloring horizontal zones
 opacity = 0.5  # Adjust opacity here
@@ -197,9 +203,9 @@ if colorful:
         elif upper == threshold_values[1]:
             plt.fill_between(p_values, lower, upper, where=(p_values >= 0.4), 
                             facecolor='none', hatch='/', edgecolor='black', linewidth=1)
-        elif upper == 1:  # Hatch the entire zone
-            plt.fill_between(p_values, lower, upper, 
-                            facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
+        # elif upper == 1:  # Hatch the entire zone
+        #     plt.fill_between(p_values, lower, upper, 
+        #                     facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
 
 # Scatter plots
 for w in threshold_values:
@@ -209,9 +215,9 @@ for w in threshold_values:
 plt.scatter(p_values, plot_data["Test round failure rate"], 
             label="Proportion of failed test rounds", marker="*", color='black')
 
-plt.gcf().set_size_inches(8.5, 6)
+plt.gcf().set_size_inches(10, 6)
 plt.legend()
-plt.savefig(folder + "/" + noise_type + "_plot.pdf")
+plt.savefig(plots_folder + "/" + noise_type + ".pdf", bbox_inches='tight')
 plt.show()
 
 
