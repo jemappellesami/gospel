@@ -16,7 +16,9 @@ DEPOL = "results/sas/DEPOL-outcomes-n5-d30"
 
 
 colorful = False
-folder = MALICIOUS
+folder = UNCOR_DEPOL
+threshold_values = ([1])
+
 noise_type = folder.split('/')[2].split('-')[0]
 d = 100
 s = 100
@@ -52,7 +54,9 @@ for file in os.listdir(folder):
         files_dict[prob] = file_path
     
 p_values = np.array(sorted(list([float(i) for i in files_dict.keys()])))
-if noise_type == "UNCOR DEPOL":
+if noise_type == "UNCOR_DEPOL":
+    p_values = p_values[:-1]
+elif noise_type == "DEPOL":
     p_values = p_values[:-1]
 print(p_values)
 
@@ -141,7 +145,6 @@ def get_failure_rate(threshold_values:list[float]):
 
 
 
-threshold_values = ([1, 0.2, 0.15,  0.08])
 colors_list = [
     ("red", "white"),
     ("green", "lightgreen"),
@@ -167,7 +170,7 @@ plt.figure()
 # plt.title(f"Proportion of corrupted instances accepted according to threshold $\omega$, $|c|<{round(0.5-delta, 3)}$, {noise_type}")
 plt.xlabel('$p_{err}$')
 plt.ylim(0, 1)
-plt.xlim(0, 1)
+# plt.xlim(0, 1)
 
 # Coloring horizontal zones
 opacity = 0.5  # Adjust opacity here
