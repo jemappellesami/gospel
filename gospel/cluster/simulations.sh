@@ -87,7 +87,7 @@ for p_err in 0.00005 0.00015 0.0005 ; do
   echo "Running with p_err=$p_err, PORT=$PORT"
 
   # Run the process in the background
-  time python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes
+  time python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
 done
 
