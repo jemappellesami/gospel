@@ -3,17 +3,22 @@ import json
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 import csv
 import json
 import os
-import pandas as pd
 
-
-folder = "results/sas/DEPOL-outcomes-n5-d30"
-noise_type = "DEPOL"
+MALICIOUS = "results/holl/MALICIOUS-outcomes-n5/2025-03-22T21-55"
+UNCOR_DEPOL = "results/sas/UNCOR_DEPOL-outcomes-n5-d30"
+folder = MALICIOUS
+noise_type = "MALICIOUS"
 d = 100
 s = 100
-delta = 0
+
+
+# delta = 0.15
+# delta = 0
+delta = 0.5-1/np.e
 
 bqp_error=0.4
 with Path("gospel/cluster/sampled_circuits.txt").open() as f:
@@ -40,7 +45,7 @@ for file in os.listdir(folder):
         prob = float(file.split(".json")[0].split("p")[1])
         files_dict[prob] = file_path
     
-p_values = sorted(list([float(i) for i in files_dict.keys()]))
+p_values = np.array(sorted(list([float(i) for i in files_dict.keys()])))
 if noise_type == "UNCOR DEPOL":
     p_values = p_values[:-1]
 print(p_values)
@@ -94,7 +99,21 @@ def get_failure_rate(threshold_values:list[float]):
                                                & (df["n_failed_trap_rounds"] < w*s)
                                                & (abs(df["bqp_error"]-0.5 >= delta))
                                                ])
-            proportion_failed_instances_dict[w].append(proportion_wrong_outcomes/len(df[(abs(df["bqp_error"]-0.5 >= delta))]))
+            accepted_instances =  df[(df["n_failed_trap_rounds"] < w*s)]
+            filtered_accepted_instances = df[
+                (abs(df["bqp_error"]-0.5 >= delta))
+                # & (df["n_failed_trap_rounds"] < w*s)
+                ]
+            if len(accepted_instances) != 0:
+                # proportion = proportion_wrong_outcomes/len(circuits)
+                proportion = proportion_wrong_outcomes/len(filtered_accepted_instances)
+            else:
+                proportion = None
+            proportion_failed_instances_dict[w].append(proportion)
+            # proportion_failed_instances_dict[w].append(proportion_wrong_outcomes/len(df[
+            #     (abs(df["bqp_error"]-0.5 >= delta))
+            #     & (df["n_failed_trap_rounds"] < w*s)
+            #     ]))
 
             print(f"w={w}, p={prob} => {proportion_wrong_outcomes} instances /100 gave more than 50% wrong decisions")
             if proportion_wrong_outcomes != 0:
@@ -115,27 +134,70 @@ def get_failure_rate(threshold_values:list[float]):
     return plot_data, harold_table
 
 
-threshold_values = [1, 0.15, 0.08]
-colors = {1:'green', 0.08:'blue', 0.15:'red', 0.25:'orange'}
+
+threshold_values = [1, 0.15, 0.22, 0.08]
+colors_list = [
+    ("red", "white"),
+    ("green", "lightgreen"),
+    ("orange", "lightsalmon"),
+    ("blue", "lightblue"),
+]
+colors = {threshold_values[i]:colors_list[i] for i in range(len(threshold_values))}
+
+# colors = {1: 'green', 0.08: 'blue', 0.15: 'red', 0.25: 'orange'}
+# zone_colors = {1: 'lightgreen', 0.08: 'lightblue', 0.15: 'lightcoral', 0.25: 'lightsalmon'}
+
+boundary_lines = sorted(threshold_values)  # Ensure correct order
+
 plot_data, harold_table = get_failure_rate(threshold_values=threshold_values)
 harold_table.to_csv(f"{folder}/final-summary.csv")
 plot_data.to_csv(f"{folder}/final-summary-wrong_decisions.csv")
 
+
 plt.figure()
-plt.title(f"Proportion of corrupted instances accepted according to threshold $w$, $|c|<{0.5-delta}$, {noise_type}")
+plt.title(f"Proportion of corrupted instances accepted according to threshold $\omega$, $|c|<{round(0.5-delta, 3)}$, {noise_type}")
 plt.xlabel('$p_{err}$')
-# plt.ylabel("Rate")
-plt.ylim(0,1)
-# plt.scatter(p_values, plot_data["Average wrong decisions"], label="Average rate of wrong decisions")
+plt.ylim(0, 1)
+plt.xlim(0, 1)
 
+# Coloring horizontal zones
+opacity = 0.5  # Adjust opacity here
+for i in range(len(boundary_lines)):
+    lower = boundary_lines[i - 1] if i > 0 else 0  # Start from 0
+    upper = boundary_lines[i]
+    plt.axhspan(lower, upper, color=colors[upper][1], alpha=opacity, edgecolor='black', linewidth=1)
+
+# Adding hatched regions
+for i in range(len(boundary_lines)):
+    lower = boundary_lines[i - 1] if i > 0 else 0
+    upper = boundary_lines[i]
+
+    if upper == threshold_values[1]:
+        plt.fill_between(p_values, lower, upper, where=(p_values > 0.2), 
+                         facecolor='none', hatch='/', edgecolor='gray', linewidth=0)
+    elif upper == threshold_values[2]:
+        plt.fill_between(p_values, lower, upper, where=(p_values > 0.3), 
+                         facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
+    elif upper == threshold_values[3]:
+        plt.fill_between(p_values, lower, upper, where=(p_values > 0.4), 
+                         facecolor='none', hatch='/', edgecolor='gray', linewidth=0)
+    # elif upper == 1:  # Hatch the entire zone
+    #     plt.fill_between(p_values, lower, upper, 
+    #                      facecolor='none', hatch='\\', edgecolor='gray', linewidth=0)
+
+# Scatter plots
 for w in threshold_values:
-    plt.scatter(p_values, plot_data[f"Proportion of failed instances (w={w})"], label=f"w={w}", marker="o", color=colors.get(w, 'blue'))
+    plt.scatter(p_values, plot_data[f"Proportion of failed instances (w={w})"], 
+                label=f"$\omega={w}$", marker="o", color=colors[w][0])
 
-plt.scatter(p_values, plot_data["Test round failure rate"], label="Proportion of failed test rounds", marker="*", color='black')
+plt.scatter(p_values, plot_data["Test round failure rate"], 
+            label="Proportion of failed test rounds", marker="*", color='black')
+
+plt.gcf().set_size_inches(8.5, 6)
 plt.legend()
-# plt.grid()
+plt.savefig(folder + "/" + noise_type + "_plot.png")
 plt.show()
-plt.savefig(folder + "plot.png")
+
 
 
 
