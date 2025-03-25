@@ -7,8 +7,8 @@ n_instances=100
 bqp_error=0.4
 # python -m gospel.cluster.generate_circuit_sample $n_instances $bqp_error
 
-n_comp_run=10
-n_test_run=0
+n_comp_run=100
+n_test_run=100
 n_nodes=$n_instances
 
 # echo "Simulations on h-oll circuits"
