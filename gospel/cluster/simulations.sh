@@ -51,21 +51,21 @@ cp gospel/cluster/sampled_circuits.holl.txt gospel/cluster/sampled_circuits.txt
 
 # done
 
-# echo "STRONG GLOBAL NOISE"
-# # Strong global noise
-# for p_err in 0.5 ; do
-#   PORT=24395
+echo "STRONG GLOBAL NOISE"
+# Strong global noise
+for p_err in 0.025 0.05 0.075 0.15; do
+  PORT=24395
 
-#   # Print p and assigned port
-#   echo "Running with p_err=$p_err, PORT=$PORT"
+  # Print p and assigned port
+  echo "Running with p_err=$p_err, PORT=$PORT"
 
-#   # Run the process in the background locally
-#   #time python -m gospel.cluster.run_veriphix-strong $n_comp_run $n_test_run $n_instances $p_err $bqp_error --scale $n_nodes
+  # Run the process in the background locally
+  #time python -m gospel.cluster.run_veriphix-strong $n_comp_run $n_test_run $n_instances $p_err $bqp_error --scale $n_nodes
 
-#   # Run the process in the background on the cluster
-#   nohup python -m gospel.cluster.run_veriphix-strong $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes 
+  # Run the process in the background on the cluster
+  python -m gospel.cluster.run_veriphix-strong $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 3 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
-# done
+done
 
 
 
@@ -80,34 +80,34 @@ cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
 
 echo "DEPOLARIZING (CORRELATED)"
 # Depolarizing
-for p_err in 0.0015 0.002 ; do
+for p_err in 0.00025 ; do
   PORT=35407
 
   # Print p and assigned port
   echo "Running with p_err=$p_err, PORT=$PORT"
 
   # Run the process in the background
-  time python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+  python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
 done
 
 # cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
-# echo "DEPOLARIZING (UNCORRELATED)"
-# Depolarizing
-# for p_err in 0.00005 0.00009 ; do
-#   PORT=35407
+echo "DEPOLARIZING (UNCORRELATED)"
+Depolarizing
+for p_err in 0.000015 0.000018 0.00002 ; do
+  PORT=35407
 
-#   # Print p and assigned port
-#   echo "Running with p_err=$p_err, PORT=$PORT"
+  # Print p and assigned port
+  echo "Running with p_err=$p_err, PORT=$PORT"
 
-#   # Run the process in the background
-#   time python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+  # Run the process in the background
+  python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
-# done
+done
 
-# wait  # Ensure all background jobs complete
+wait  # Ensure all background jobs complete
 
-# echo "All jobs completed!"
+echo "All jobs completed!"
 
 
 # Loaded 100 circuits.

@@ -15,9 +15,9 @@ DEPOL = "results/sas/DEPOL-outcomes-n5-d30"
 plots_folder = "results/plots"
 
 
-colorful = True
-threshold_values = ([1, 0.1, 0.08, 0.05])
-folder = MALICIOUS
+colorful = False
+threshold_values = ([1])
+folder = STRONG_GLOBAL
 
 noise_type = folder.split('/')[2].split('-')[0]
 
@@ -63,6 +63,8 @@ if noise_type == "UNCOR_DEPOL":
     p_values = p_values[:-1]
 elif noise_type == "DEPOL":
     p_values = p_values[:-2]
+elif noise_type == "STRONG":
+    p_values = p_values[:4]
 print(p_values)
 
 def get_harold_table():
@@ -175,7 +177,9 @@ plt.figure()
 # plt.title(f"Proportion of corrupted instances accepted according to threshold $\omega$, $|c|<{round(0.5-delta, 3)}$, {noise_type}")
 plt.xlabel('$p_{err}$')
 plt.ylim(0, 1)
-if noise_type in ["MALICIOUS", "GENTLE", "STRONG"] :
+if noise_type == "STRONG":
+    plt.xlim(0, max(p_values))
+if noise_type in ["MALICIOUS", "GENTLE"] :
     plt.xlim(0, 1)
 
 # Coloring horizontal zones
