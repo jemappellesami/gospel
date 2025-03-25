@@ -70,44 +70,44 @@ done
 
 
 
-echo "Simulations on SAS circuits"
-# git checkout 143645c8cedcd2c0e14dd58e991b610ad7385d7a
-# rm -rf circuits
-# python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 5 --depth 30 --p-gate 0.5 --p-cnot 0.25 --p-cnot-flip 0.5 --p-rx 0.5 --seed 1729 --target circuits
-# git checkout sim-verif
-mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
-cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
-
-echo "DEPOLARIZING (CORRELATED)"
-# Depolarizing
-for p_err in 0.00025 ; do
-  PORT=35407
-
-  # Print p and assigned port
-  echo "Running with p_err=$p_err, PORT=$PORT"
-
-  # Run the process in the background
-  python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
-
-done
-
+# echo "Simulations on SAS circuits"
+# # git checkout 143645c8cedcd2c0e14dd58e991b610ad7385d7a
+# # rm -rf circuits
+# # python -m gospel.sampling_circuits.sampling_circuits --ncircuits 1000 --nqubits 5 --depth 30 --p-gate 0.5 --p-cnot 0.25 --p-cnot-flip 0.5 --p-rx 0.5 --seed 1729 --target circuits
+# # git checkout sim-verif
+# mv gospel/cluster/sampled_circuits.txt gospel/cluster/sampled_circuits.tmp.txt 
 # cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
-echo "DEPOLARIZING (UNCORRELATED)"
-# Depolarizing
-for p_err in 0.000015 0.000018 0.00002 ; do
-  PORT=35407
 
-  # Print p and assigned port
-  echo "Running with p_err=$p_err, PORT=$PORT"
+# echo "DEPOLARIZING (CORRELATED)"
+# # Depolarizing
+# for p_err in 0.00025 ; do
+#   PORT=35407
 
-  # Run the process in the background
-  python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+#   # Print p and assigned port
+#   echo "Running with p_err=$p_err, PORT=$PORT"
 
-done
+#   # Run the process in the background
+#   python -m gospel.cluster.run_veriphix-depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
 
-wait  # Ensure all background jobs complete
+# done
 
-echo "All jobs completed!"
+# # cp gospel/cluster/sampled_circuits.sas.txt gospel/cluster/sampled_circuits.txt
+# echo "DEPOLARIZING (UNCORRELATED)"
+# # Depolarizing
+# for p_err in 0.000015 0.000018 0.00002 ; do
+#   PORT=35407
+
+#   # Print p and assigned port
+#   echo "Running with p_err=$p_err, PORT=$PORT"
+
+#   # Run the process in the background
+#   python -m gospel.cluster.run_veriphix-uncorr_depol $n_comp_run $n_test_run $n_instances $p_err $bqp_error --walltime 10 --memory 4 --cores 4 --port $PORT --scale $n_nodes &
+
+# done
+
+# wait  # Ensure all background jobs complete
+
+# echo "All jobs completed!"
 
 
 # Loaded 100 circuits.
