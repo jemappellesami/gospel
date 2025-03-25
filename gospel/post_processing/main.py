@@ -15,9 +15,9 @@ DEPOL = "results/sas/DEPOL-outcomes-n5-d30"
 plots_folder = "results/plots"
 
 
-colorful = False
-threshold_values = ([1])
-folder = DEPOL
+colorful = True
+threshold_values = ([1, 0.10, 0.08, 0.05])
+folder = MALICIOUS
 
 noise_type = folder.split('/')[2].split('-')[0]
 
@@ -152,8 +152,8 @@ def get_failure_rate(threshold_values:list[float]):
 
 colors_list = [
     ("red", "white"),
-    ("green", "lightgreen"),
     ("orange", "lightsalmon"),
+    ("green", "lightgreen"),
     ("blue", "lightblue"),
 ]
 colors = {threshold_values[i]:colors_list[i] for i in range(len(threshold_values))}
@@ -188,6 +188,8 @@ for i in range(len(boundary_lines)):
     else:
         plt.axhspan(lower, upper, color="white", alpha=opacity, edgecolor='black', linewidth=1)
 
+prob_values = np.array([min(t*2, 1) for t in threshold_values])
+
 if colorful:
     # Adding hatched regions
     for i in range(len(boundary_lines)):
@@ -195,13 +197,13 @@ if colorful:
         upper = boundary_lines[i]
 
         if upper == threshold_values[3]:
-            plt.fill_between(p_values, lower, upper, where=(p_values >= 0.2), 
+            plt.fill_between(prob_values, lower, upper, where=(prob_values >= 0.1), 
                             facecolor='none', hatch='/', edgecolor='black', linewidth=1)
         elif upper == threshold_values[2]:
-            plt.fill_between(p_values, lower, upper, where=(p_values >= 0.3), 
+            plt.fill_between(prob_values, lower, upper, where=(prob_values >= 0.16), 
                             facecolor='none', hatch='\\', edgecolor='black', linewidth=1)
         elif upper == threshold_values[1]:
-            plt.fill_between(p_values, lower, upper, where=(p_values >= 0.4), 
+            plt.fill_between(prob_values, lower, upper, where=(prob_values >= 0.2), 
                             facecolor='none', hatch='/', edgecolor='black', linewidth=1)
         # elif upper == 1:  # Hatch the entire zone
         #     plt.fill_between(p_values, lower, upper, 
