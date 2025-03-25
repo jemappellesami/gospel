@@ -16,7 +16,7 @@ plots_folder = "results/plots"
 
 
 colorful = True
-threshold_values = ([1, 0.10, 0.08, 0.05])
+threshold_values = ([1, 0.1, 0.08, 0.05])
 folder = MALICIOUS
 
 noise_type = folder.split('/')[2].split('-')[0]
@@ -30,8 +30,8 @@ s = 100
 
 
 # delta = 0.15
-# delta = 0
-delta = 0.5-1/np.e
+# delta = 0.5-1/np.e
+delta = 0
 
 bqp_error=0.4
 with Path(sampled_circuits).open() as f:
@@ -62,7 +62,7 @@ p_values = np.array(sorted(list([float(i) for i in files_dict.keys()])))
 if noise_type == "UNCOR_DEPOL":
     p_values = p_values[:-1]
 elif noise_type == "DEPOL":
-    p_values = p_values[:-1]
+    p_values = p_values[:-2]
 print(p_values)
 
 def get_harold_table():
@@ -112,11 +112,11 @@ def get_failure_rate(threshold_values:list[float]):
         for w in (threshold_values):
             proportion_wrong_outcomes = len(df[(df['majority vote outcome'] != df["expected_outcome"]) 
                                                & (df["n_failed_trap_rounds"] < w*s)
-                                               & (abs(df["bqp_error"]-0.5 >= delta))
+                                               & (abs(df["bqp_error"]-0.5) >= delta)
                                                ])
             accepted_instances =  df[(df["n_failed_trap_rounds"] < w*s)]
             filtered_accepted_instances = df[
-                (abs(df["bqp_error"]-0.5 >= delta))
+                (abs(df["bqp_error"]-0.5) >= delta)
                 & (df["n_failed_trap_rounds"] < w*s)
                 ]
             if len(filtered_accepted_instances) != 0:
@@ -130,7 +130,7 @@ def get_failure_rate(threshold_values:list[float]):
             #     & (df["n_failed_trap_rounds"] < w*s)
             #     ]))
 
-            print(f"w={w}, p={prob} => {proportion_wrong_outcomes} instances /100 gave more than 50% wrong decisions")
+            print(f"w={w}, p={prob} => {proportion_wrong_outcomes} instances /{len(filtered_accepted_instances)} gave more than 50% wrong decisions")
             if proportion_wrong_outcomes != 0:
                 print("Incorrect decision dataframe")
                 print(df[df['majority vote outcome'] != df["expected_outcome"]])
